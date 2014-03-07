@@ -1,4 +1,4 @@
-function Funcion(a, b){
-  this.a = a;
-  this.b = b;
+var f = function(a){
+	this.a = a;
+        return this.nombre;
 };
