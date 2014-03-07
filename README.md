@@ -1,17 +1,29 @@
-##TDOP, Top Down Operator Precedence Mini JavaScript Parser
+# Práctica 04 - Procesadores de Lenguajes#
+## 1. Objetivo de la práctica ##
 
-## Author
+La práctica consiste en la realización de un analizador léxico para un código en javascript.
+Para ello se creará una aplicación Ruby con Sinatra, haciendo un despliegue con heroku.
 
-Forked from Douglas Crockford TDOP project.
-douglas@crockford.com
 
-## Introduction
+## 2. Despliegue Heroku ##
+Se puede acceder a la página web de Heroku en el siguiente enlace:
 
-* A full introduction is in the file [tdop.html](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/tdop.html) by Douglas Crockford.
-It contains a description of Vaughn Pratt's Top Down Operator Precedence,
-and describes a parser for Simplified JavaScript in Simplified JavaScript.
+[http://analizador3.herokuapp.com/](http://analizador3.herokuapp.com/)
 
-* [Deployment at GitHub pages](http://crguezl.github.io/ull-etsii-grado-pl-minijavascript/). 
-  The app parses the input file  and displays its AST. 
+## 3. Pruebas ##
+Se han realizado las siguientes pruebas:
 
-* The exercise is to understand and improve [tokens.js](https://github.com/crguezl/ull-etsii-grado-pl-minijavascript/blob/master/tokens.js). The `tokens` function  produces an array with the tokens for a given input string.
+[http://analizador3.herokuapp.com/tests/index.html](http://analizador3.herokuapp.com/tests/index.html)
+
+
+## 4. Reparto del trabajo ##
+
+### Leandro ###
+- Estilo CSS.
+- Ficheros a cargar.
+- Codemirror.
+
+### Román ###
+- Crear repositorio.
+- Cambio expresiones regulares.
+- Pruebas Mocha.
