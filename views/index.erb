@@ -8,6 +8,13 @@
 </head>
 
 <body>
+	<script>
+    function dump(fileName) {
+        $.get(fileName, function (data) {
+            $("#INPUT").val(data);
+        });
+    };
+  </script> 
 	<div style="margin:auto; width:60%;">
 	  <h1 id="titulo">Lexical Analysis</h1>
 	  <p>
@@ -49,17 +56,5 @@
 		<pre id=OUTPUT></pre>
 		
   </div>
- 
-    <script>
-	var editor = CodeMirror.fromTextArea(document.getElementById("INPUT"), {
-      lineNumbers: true,
-      viewportMargin: Infinity
-    });
-    function dump(fileName) {
-        $.get(fileName, function (data) {
-            editor.setValue(data);
-        });
-    };
-  </script> 
 </body>
 </html>
