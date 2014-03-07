@@ -34,7 +34,6 @@ String.prototype.tokens = function () {
 	var THREECHAROPERATORS  = /([!=]==)/g;
     var TWOCHAROPERATORS    = /([+][+=]|-[-=]|!=|=[=<>]|[<>][=<>]|&&|[|][|])/g;
     var ONECHAROPERATORS    = /([-+*\/%\^=()&|;:,.<>{}[\]])/g; // May be some character is missing
-	
     var tokens = [WHITES, ID, NUM, STRING, ONELINECOMMENT, 
                   MULTIPLELINECOMMENT, THREECHAROPERATORS, TWOCHAROPERATORS, ONECHAROPERATORS ];
 
